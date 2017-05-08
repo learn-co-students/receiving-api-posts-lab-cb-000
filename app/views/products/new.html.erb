@@ -13,3 +13,29 @@
   <%= f.text_field :inventory %>
   <%= f.submit "submit" %>
 <% end %>
+
+<p id="p-name"></p>
+<p id="p-price"></p>
+<p id="p-inventory"></p>
+<p id="p-description"></p>
+
+<script type="text/javascript">
+  $(function(){
+    $('form').on('submit', function(e){
+      e.preventDefault();
+
+      var values = $(this).serialize();
+      var posting = $.post('/products', values);
+      posting.done(function(product){
+        //render new product data
+        //name, price, inventory, description
+        $('#p-name').text(product["name"])
+        //wanted a $ infront of price
+        $('#p-price').text("$" + product["price"])
+        $('#p-inventory').text(product["inventory"])
+        $('#p-description').text(product["description"])
+        //would be nice to clear form so we can enter another product
+      })
+    })
+  })
+</script>
