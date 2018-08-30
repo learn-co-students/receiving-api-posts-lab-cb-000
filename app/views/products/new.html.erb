@@ -24,11 +24,14 @@
 <script type="text/javascript" charset="utf-8">
   $(function() {
     $('form').submit(function(e) {
+
       // Prevents the form from submitting via HTML when the client clicks submit (a forms default action)
       e.preventDefault();
 
+      // Serializes the inputted from data, e.g. :
+        // 'utf8=...authenticity_token=...&product%5Bname%5D=Macbook&product%5Bprice%5D=1500&product%5Bdescription%5D=cool&product%5Binventory%5D=3'
       var formData = $(this).serialize();
-      console.log(formData);
+
       var postProduct = $.post("/products",formData);
 
       postProduct.done(function(data) {

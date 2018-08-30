@@ -18,8 +18,13 @@ class ProductsController < ApplicationController
   end
 
   def create
-    Product.create(product_params)
-    redirect_to products_path
+    product = Product.create(product_params)
+    # render json: product.to_json (implicitly sets status code: 200) (which would work)
+    render json: product.to_json, status: 201  # Better!
+    # AJAX .done() won't accept a status code 302
+    # It will only accept a code in the 200s:
+      # 200 (the default for render) means OK
+      # 201 means a resource was created
   end
 
   def show
