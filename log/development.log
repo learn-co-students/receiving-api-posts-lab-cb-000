@@ -1693,3 +1693,92 @@ Processing by ProductsController#create as */*
   [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
   [1m[35mOrder Load (0.4ms)[0m  SELECT "orders".* FROM "orders" INNER JOIN "ordered_products" ON "orders"."id" = "ordered_products"."order_id" WHERE "ordered_products"."product_id" = ?  [["product_id", 21]]
 Completed 201 Created in 75ms (Views: 66.6ms | ActiveRecord: 2.4ms)
+Started GET "/products" for 86.99.96.217 at 2019-09-15 15:38:11 +0000
+Cannot render console from 86.99.96.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /usr/local/rvm/gems/ruby-2.6.1/gems/activerecord-5.0.7.1/lib/active_record/railtie.rb:113)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 548ms (Views: 520.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/static.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 86.99.96.217 at 2019-09-15 15:38:17 +0000
+Cannot render console from 86.99.96.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/store_admin.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 86.99.96.217 at 2019-09-15 15:38:17 +0000
+Cannot render console from 86.99.96.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 86.99.96.217 at 2019-09-15 15:38:17 +0000
+Cannot render console from 86.99.96.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 86.99.96.217 at 2019-09-15 15:38:17 +0000
+Cannot render console from 86.99.96.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 86.99.96.217 at 2019-09-15 15:38:17 +0000
+Cannot render console from 86.99.96.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 86.99.96.217 at 2019-09-15 15:38:17 +0000
+Cannot render console from 86.99.96.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/store_admin.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 86.99.96.217 at 2019-09-15 15:38:17 +0000
+Cannot render console from 86.99.96.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/static.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 86.99.96.217 at 2019-09-15 15:38:17 +0000
+Cannot render console from 86.99.96.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 86.99.96.217 at 2019-09-15 15:38:18 +0000
+Cannot render console from 86.99.96.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/products/new" for 86.99.96.217 at 2019-09-15 15:38:24 +0000
+Cannot render console from 86.99.96.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (1063.6ms)
+Completed 200 OK in 1085ms (Views: 1081.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 86.99.96.217 at 2019-09-15 15:40:20 +0000
+Cannot render console from 86.99.96.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 86.99.96.217 at 2019-09-15 15:47:32 +0000
+Cannot render console from 86.99.96.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 86.99.96.217 at 2019-09-15 15:47:32 +0000
+Cannot render console from 86.99.96.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 86.99.96.217 at 2019-09-15 15:47:32 +0000
+Cannot render console from 86.99.96.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/products" for 86.99.96.217 at 2019-09-15 15:48:10 +0000
+Cannot render console from 86.99.96.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1676AF9cVuws9OjJRCvkgdyR7qcba8PhqB6Gh3OchfecI8vKl3qIOBYpHhhfwxyG3P5z4ZliChQsPPEengqyww==", "product"=>{"name"=>"Test Product", "price"=>"10", "description"=>"hmmmmm", "inventory"=>"9"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "price", "created_at", "updated_at", "inventory", "description") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Test Product"], ["price", 10], ["created_at", "2019-09-15 15:48:10.501414"], ["updated_at", "2019-09-15 15:48:10.501414"], ["inventory", 9], ["description", "hmmmmm"]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers]   [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" INNER JOIN "ordered_products" ON "orders"."id" = "ordered_products"."order_id" WHERE "ordered_products"."product_id" = ?[0m  [["product_id", 22]]
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (51.54ms)
+Completed 201 Created in 117ms (Views: 107.5ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/products/new" for 86.99.96.217 at 2019-09-15 15:49:01 +0000
+Cannot render console from 86.99.96.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 86.99.96.217 at 2019-09-15 15:49:14 +0000
+Cannot render console from 86.99.96.217! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JAX7Gxak/4nSNN8f7EpLtngVrKRp4PolSUvmst0LyVJviMrR3oIhXejpKc73orOxeHox4uvpM9DNaZErMJ3+Zg==", "product"=>{"name"=>"sword", "price"=>"18", "description"=>"wdhbhdbwqdhq", "inventory"=>"7"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "price", "created_at", "updated_at", "inventory", "description") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "sword"], ["price", 18], ["created_at", "2019-09-15 15:49:14.909957"], ["updated_at", "2019-09-15 15:49:14.909957"], ["inventory", 7], ["description", "wdhbhdbwqdhq"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers]   [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" INNER JOIN "ordered_products" ON "orders"."id" = "ordered_products"."order_id" WHERE "ordered_products"."product_id" = ?[0m  [["product_id", 23]]
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (2.3ms)
+Completed 201 Created in 10ms (Views: 3.2ms | ActiveRecord: 2.9ms)
+
+
