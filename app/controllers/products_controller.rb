@@ -18,8 +18,9 @@ class ProductsController < ApplicationController
   end
 
   def create
-    Product.create(product_params)
-    redirect_to products_path
+    @product = Product.create(product_params)
+    # use ProductSerializer to conjure JSON for use by the ".done" in the new-view ".submit" function
+    render json: @product, status: 201
   end
 
   def show
